@@ -5,11 +5,12 @@
 
 $black: #000000;
 $white: #ffffff;
+$Fire: #da552f;
 
 // Update Bulma's global variables
 $family-sans-serif: 'Rubik', sans-serif;
 $family-secondary: 'Quicksand', sans-serif;
-$section-padding: 1.5rem 1.5rem;
+$section-padding:  0.25rem 8rem;
 $body-size: 14px;
 $text: $black;
 $link: $black;
@@ -21,7 +22,7 @@ $panel-block-active-icon-color: #ff2d55;
 $panel-block-hover-background-color: transparent;
 $button-color: $white;
 $button-hover-color: $white;
-$button-background-color: $black;
-$button-disabled-background-color: $black;
+$button-background-color: $Fire;
+$button-disabled-background-color: $Fire;
 
 @import '../../node_modules/bulma/bulma.sass';

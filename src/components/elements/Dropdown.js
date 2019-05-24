@@ -1,5 +1,12 @@
 import React from 'react';
 
+import styled from 'styled-components';
+
+
+const Container = styled.div`
+    margin-top: 13px;
+  `;
+  
 export default class Dropdown extends React.Component {
   constructor(props) {
     super(props);
@@ -20,27 +27,27 @@ export default class Dropdown extends React.Component {
   render() {
     const { isActive } = this.state;
     return (
-      <div className={isActive ? 'is-active dropdown' : 'dropdown'}>
+      <Container className={isActive ? 'is-active dropdown' : 'dropdown'}>
         <div className="dropdown-trigger">
-          <button
-            className="button"
+          <div
+            className=" has-background-white has-text-black"
             aria-haspopup="true"
             aria-controls="dropdown-menu"
             onClick={this.toggleDropdown}
           >
-            <span>Dropdown button</span>
-            <span className="icon is-small">
-              <i className="fas fa-angle-down" aria-hidden="true" />
+            
+            <span className="icon is-medium">
+              <i className="fas fa-ellipsis-h  is-size-4" aria-hidden="true" />
             </span>
-          </button>
+          </div>
         </div>
-        <div className="dropdown-menu" id="dropdown-menu" role="menu">
+        <div className="dropdown-menu " id="dropdown-menu" role="menu">
           <div className="dropdown-content">
             <a href="#" className="dropdown-item">
               Dropdown item
             </a>
             <a className="dropdown-item">Other dropdown item</a>
-            <a href="#" className="dropdown-item is-active">
+            <a href="#" className="dropdown-item ">
               Active dropdown item
             </a>
             <a href="#" className="dropdown-item">
@@ -52,7 +59,7 @@ export default class Dropdown extends React.Component {
             </a>
           </div>
         </div>
-      </div>
+      </Container>
     );
   }
 }

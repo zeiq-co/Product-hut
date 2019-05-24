@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styled from 'styled-components';
-import Dropdown from './Dropdown';
+import Dropdown from './elements/Dropdown';
 
 const Container = styled.div`
   background-color: white;

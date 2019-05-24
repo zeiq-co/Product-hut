@@ -1,15 +1,15 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const colors = {
-  white: '#fff',
+  white: '#ffffff',
   black: '#000000',
   gray: '#777',
-  pumpkin:
-    'linear-gradient( 135deg, rgba(60, 8, 118, 0.8) 0%, rgba(250, 0, 118, 0.8) 100%)',
+  fire:'#da552f',
+  pumpkin:'#fff',
   regentGray: '#9a9a9b',
   grayChateau: '#8f8f8f',
   blueColor: '#633991',
-  backgroundColor: 'red',
+  backgroundColor: '#f3f3f3;',
 };
 
 export const sizes = {
@@ -23,6 +23,7 @@ export const sizes = {
 export default {
   fontFamily: `'Poppins', sans-serif`,
   primary: colors.pumpkin,
+  fire: colors.fire,
   white: colors.white,
   fontDark: colors.brightGray,
   fontLight: colors.regentGray,
