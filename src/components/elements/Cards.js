@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Container = styled.div`
     background-color: ${props=>props.theme.white};
     padding: 2% 2%;
-    margin: 2% 2%;
+    margin: 1% 0%;
     .title {
         line-height: 2;
     }
