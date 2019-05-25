@@ -12,7 +12,7 @@ const Container = styled.div`
     margin-top: 2rem;
     }
 `;
-const Cards = ({ image, title, subtitle }) => (
+const Cards = ({ image, title, subtitle, Icon }) => (
   <Container className="">
     <article className="media">
       <figure className="media-left">
@@ -34,7 +34,7 @@ const Cards = ({ image, title, subtitle }) => (
         </nav>
       </div>
       <div className="media-right">
-        <span className="icons is-small is-size-2"><i className="icons fas fa-chevron-right" /></span>
+        <span className="icons is-small is-size-2"><i className={Icon} /></span>
       </div>
     </article>
   </Container>

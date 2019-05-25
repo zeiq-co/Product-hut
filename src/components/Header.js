@@ -5,6 +5,9 @@ import Dropdowan from './elements/Dropdown';
 
 const Container = styled.nav`
   background-color: ${props => props.theme.white};
+  @media screen and (max-width: 600px) {
+    padding: 0rem 0rem !important;
+  }
   .field {
     margin: 1rem 0rem;
   }
@@ -57,7 +60,7 @@ const Header = () => (
           <a className="navbar-item">
              EVENTS
           </a>
-        <Dropdowan />
+          <Dropdowan />
         </div>
 
         <div className="navbar-end">

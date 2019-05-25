@@ -24,10 +24,11 @@ export default class FirstSection extends React.Component {
                 title="But wait, why the API edition?"
                 subtitle="Over the years, Makers have delighted us and the wider community with products built on our API.
                  We’ve seen Twitter bots, to data analysis to social networks."
+                Icon="icons fas fa-chevron-right"
               />
-              <Heading title="Maker Fastivel" size={3} />
+              <Heading title="Today" size={3} />
               <Cards
-                image={FirstImage}
+                image={FirstImage} 
                 title="But wait, why the API edition?"
                 subtitle="Over the years, Makers have delighted us and the wider community with products built on our API.
                  We’ve seen Twitter bots, to data analysis to social networks."
@@ -40,7 +41,13 @@ export default class FirstSection extends React.Component {
               />
             </div>
             <div className="column">
-            Second column
+              <Heading title="Maker Fastivel" size={3} />
+              <Cards              
+                subtitle="Over the years, Makers have delighted us and the wider community with products built on our API.
+                 We’ve seen Twitter bots, to data analysis to social networks."
+                image={FirstImage}
+                Icon="fas fa-play" 
+              />
             </div>
           </div>
         </div>
